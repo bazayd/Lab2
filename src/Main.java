@@ -1,6 +1,6 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
+    // Abstract base class
     abstract static class Currency {
         private int whole;
         private int fractional;
@@ -27,12 +27,12 @@ public class Main {
 
     }
 
-    static class Dollar extends Currency {
+    abstract static class Dollar extends Currency {
         public String currencyName;
 
     }
 
-    static class Pound extends Currency {
+    abstract static class Pound extends Currency {
         public String currencyName;
 
     }
