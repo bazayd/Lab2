@@ -1,2 +1,4 @@
-public class Dollar {
+public class Dollar extends Currency{
+
+    private String currencyName;
 }
