@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8357cf61-a557-4ffe-9972-c9ef81f8cdc6" name="Changes" comment="First Commit.">
+      <change afterPath="$PROJECT_DIR$/../blah/blah.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab1" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dollar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dollar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +36,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Java/Lab2",
     "onboarding.tips.debug.path": "C:/Java/Lab2/src/Main.java"
   }
 }]]></component>
