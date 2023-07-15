@@ -1,3 +1,5 @@
+import static java.lang.Character.getName;
+
 public abstract class Currency {
      private int whole;
 
@@ -55,40 +57,75 @@ public abstract class Currency {
         this.fraction = fraction;
     }
 
-    public Currency add(Currency other) {
-         if (!this.getClass().equals(other.getClass())) {
-             throw new IllegalArgumentException("Cannot add two different currencies.");
-         }
 
-         int wholeAdd = this.whole + other.whole;
-         int fractionAdd = this.fraction + other.fraction;
-
-         if (fractionAdd >= 100) {
-             ++wholeAdd;
-             fractionAdd -= 100;
-         }
-         return other;
+    /*
+    Method that adds a currency to the array depending on type of currency
+    Pre: currency type (Dollar or Pound)
+    Post:
+        lorem ipsum
 
 
+    if (Currency does not equal input currency)
+        Error thrown that states different currencies cannot be added together
+       end if
+    integer totalWholePart = current whole amount of currency + currency inputted by user
+    integer totalFractionalPart = current fractional amount of currency + currency inputted by user
+
+
+
+     */
+    public void add(Currency currency) {
+        if (!this.getClass().equals(currency.getClass())) {
+            throw new IllegalArgumentException("Cannot add currencies of different types.");
+        }
+        int totalWholePart = this.whole + currency.whole;
+        int totalFractionalPart = this.fraction + currency.fraction;
+        this.whole = totalWholePart + (totalFractionalPart / 100);
+        this.fraction = totalFractionalPart % 100;
     }
 
-    public int add() {
-        return 1;
+    /*
+    Pre:
+    Post:
+
+
+
+     */
+    public void subtract(Currency currency) {
+        if (!this.getClass().equals(currency.getClass())) {
+            throw new IllegalArgumentException("Cannot subtract currencies of different types.");
+        }
+        int totalWholePart = this.whole * 100 + this.whole;
+        int subtractWholePart = currency.whole * 100 + currency.fraction;
+        if (totalWholePart < subtractWholePart) {
+            throw new IllegalArgumentException("Cannot subtract a larger currency value from a smaller one.");
+        }
+        int result = totalWholePart - subtractWholePart;
+        this.whole = result / 100;
+        this.fraction = result % 100;
     }
 
-    public int subtract() {
-        return 1;
+    /*
+    Pre:
+    Post:
+        return true or false
+
+    returns boolean that determines if whole currency number from Currency class is equal to user inputted currency and likewise for fraction numbers.
+     */
+    public boolean isEqual(Currency currency) {
+        return this.whole == currency.whole && this.fraction == currency.fraction;
     }
 
-    public boolean isEqual() {
-        return false;
-    }
-
-    public boolean isGreater() {
-        return false;
+    public boolean isGreater(Currency currency) {
+        if (!this.getClass().equals(currency.getClass())) {
+            throw new IllegalArgumentException("Cannot compare currencies of different types.");
+        }
+        int totalWholePart = this.whole * 100 + this.fraction;
+        int compareWholePart = currency.whole * 100 + currency.fraction;
+        return totalWholePart > compareWholePart;
     }
 
     public String toString() {
-        return " ";
+        return String.format("%d.%02d %s", whole, fraction, getCurencyName());
     }
 }
