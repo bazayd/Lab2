@@ -1,15 +1,14 @@
-
+import java.util.Scanner;
 public class Main {
 
-// test
     public static void main(String[] args) {
 
-
+    	Scanner scan = new Scanner(System.in);
         // Currency pound in first index and Dollar in second index.
         Currency[] currencies = new Currency[2];
         currencies[0] = new Pound();
         currencies[1] = new Dollar();
-
+        
         System.out.println("Currencies in use: ");
         for (Currency currency : currencies) {
             System.out.println(currency);
