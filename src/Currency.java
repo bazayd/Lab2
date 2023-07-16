@@ -76,8 +76,8 @@ public abstract class Currency {
     if (Currency does not equal input currency)
         Error thrown that states different currencies cannot be added together
        end if
-    integer totalWholePart = current whole amount of currency + currency inputted by user
-    integer totalFractionalPart = current fractional amount of currency + currency inputted by user
+    integer totalWhole = current whole amount of currency + currency inputted by user
+    integer totalFraction = current fractional amount of currency + currency inputted by user
 
 
 
@@ -86,10 +86,10 @@ public abstract class Currency {
         if (!this.getClass().equals(currency.getClass())) {
             throw new IllegalArgumentException("Cannot add currencies of different types.");
         }
-        int totalWholePart = this.whole + currency.whole;
-        int totalFractionalPart = this.fraction + currency.fraction;
-        this.whole = totalWholePart + (totalFractionalPart / 100);
-        this.fraction = totalFractionalPart % 100;
+        int totalWhole = this.whole + currency.whole;
+        int totalFraction = this.fraction + currency.fraction;
+        this.whole = totalWhole + (totalFraction / 100);
+        this.fraction = totalFraction % 100;
     }
 
     /*
@@ -103,12 +103,12 @@ public abstract class Currency {
         if (!this.getClass().equals(currency.getClass())) {
             throw new IllegalArgumentException("Cannot subtract currencies of different types.");
         }
-        int totalWholePart = this.whole * 100 + this.whole;
+        int totalWhole = this.whole * 100 + this.whole;
         int subtractWholePart = currency.whole * 100 + currency.fraction;
-        if (totalWholePart < subtractWholePart) {
+        if (totalWhole < subtractWholePart) {
             throw new IllegalArgumentException("Cannot subtract a larger currency value from a smaller one.");
         }
-        int result = totalWholePart - subtractWholePart;
+        int result = totalWhole - subtractWholePart;
         this.whole = result / 100;
         this.fraction = result % 100;
     }
@@ -139,9 +139,9 @@ public abstract class Currency {
         if (!this.getClass().equals(currency.getClass())) {
             throw new IllegalArgumentException("Cannot compare currencies of different types.");
         }
-        int totalWholePart = this.whole * 100 + this.fraction;
-        int compareWholePart = currency.whole * 100 + currency.fraction;
-        return totalWholePart > compareWholePart;
+        int totalWhole = this.whole * 100 + this.fraction;
+        int compareWhole = currency.whole * 100 + currency.fraction;
+        return totalWhole > compareWhole;
     }
 
     /*
