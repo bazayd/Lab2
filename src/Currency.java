@@ -15,7 +15,6 @@ abstract class Currency {
 
     public boolean isEqual() {
         return false;
-        //testing
     }
 
     public boolean isGreater() {
