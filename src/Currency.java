@@ -6,12 +6,20 @@ public abstract class Currency {
      private int fraction;
 
      // Default Construction
+     /*
+      *  two integer attributes:
+      *  whole number -> currency note value
+      *  fraction -> currency coin value
+      */
      public Currency() {
          this.whole = 0;
          this.fraction = 0;
      }
 
      // Construction based on double
+     /*
+      * value cannot be less than 0
+      */
      public Currency(double value) {
          if (value < 0) {
              throw new IllegalArgumentException("Currency value can't be negative.");
@@ -62,7 +70,7 @@ public abstract class Currency {
     Method that adds a currency to the array depending on type of currency
     Pre: currency type (Dollar or Pound)
     Post:
-        lorem ipsum
+        the result of adding input object of same currency
 
 
     if (Currency does not equal input currency)
@@ -85,11 +93,11 @@ public abstract class Currency {
     }
 
     /*
+     *  Method that subtracts a currency to the array depending on type of currency
     Pre:
+    	currency type (Dollar or Pound)
     Post:
-
-
-
+		the result of subtracting input object of same currency
      */
     public void subtract(Currency currency) {
         if (!this.getClass().equals(currency.getClass())) {
@@ -106,6 +114,7 @@ public abstract class Currency {
     }
 
     /*
+     * Method that compares input object of same currency for equality
     Pre:
     Post:
         return true or false
@@ -115,7 +124,17 @@ public abstract class Currency {
     public boolean isEqual(Currency currency) {
         return this.whole == currency.whole && this.fraction == currency.fraction;
     }
-
+    
+    /*
+     * Method that compares input object of same currency to find out which object is greater/smaller
+     * 
+     * pre:
+     * currency type (Dollar or Pound)
+     * 
+     * post:
+     * boolean result of whether the input object is greater or not
+     * 
+     */
     public boolean isGreater(Currency currency) {
         if (!this.getClass().equals(currency.getClass())) {
             throw new IllegalArgumentException("Cannot compare currencies of different types.");
@@ -125,6 +144,15 @@ public abstract class Currency {
         return totalWholePart > compareWholePart;
     }
 
+    /*
+     * Method that stringifies a name and value of a currency object
+     * 
+     * pre:
+     * currency type (Dollar or Pound)
+     * 
+     * post:
+     * a string that displays the name and value
+     */
     public String toString() {
         return String.format("%d.%02d %s", whole, fraction, getCurencyName());
     }
