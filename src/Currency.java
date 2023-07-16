@@ -1,4 +1,5 @@
 import static java.lang.Character.getName;
+import java.lang.Math;
 
 public abstract class Currency {
      private int whole;
@@ -26,7 +27,8 @@ public abstract class Currency {
          }
 
          this.whole = (int) value;
-         this.fraction = (int) (value - whole);
+         this.fraction = (int) (Math.round(((value - whole)*100.0)));
+         //System.out.println("this frac: " + this.fraction + " f" + Math.round(((value - whole)*100.0)));
      }
 
      // Copy constructor with input as type Currency
@@ -88,8 +90,11 @@ public abstract class Currency {
         }
         int totalWhole = this.whole + currency.whole;
         int totalFraction = this.fraction + currency.fraction;
+        //System.out.println("totFrac " + totalFraction + "curFrac " + currency.fraction);
         this.whole = totalWhole + (totalFraction / 100);
         this.fraction = totalFraction % 100;
+        //System.out.println("After: " + this.fraction);
+        
     }
 
     /*

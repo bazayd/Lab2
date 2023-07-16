@@ -23,6 +23,7 @@ public class Main {
 
         String op = ""; // operation (add a / subtract s)
         String cur; //currency type (pound p / dollar d)
+        String type;
         double value; //value of currency (double)
         
         while(op != "q") {
@@ -32,6 +33,8 @@ public class Main {
         	op = scan.next();
             cur = scan.next();
             value = scan.nextDouble();
+            type = scan.next();
+            
             
             System.out.println(op + " " + cur + " " + value);
             
@@ -40,9 +43,9 @@ public class Main {
         		if (cur.equals("p")) {
         			currencies[0].add(new Pound(value));
         			//System.out.println(currencies[0]);
-        			System.out.println(currencies[0].getWhole());
-        			System.out.println(currencies[0].getFraction());
-        			System.out.println(currencies[0].toString());
+//        			System.out.println(currencies[0].getWhole());
+//        			System.out.println(currencies[0].getFraction());
+//        			System.out.println(currencies[0].toString());
 ;        		}else {
         			currencies[1].add(new Dollar(value));
         		}
@@ -53,10 +56,10 @@ public class Main {
         			currencies[1].subtract(new Dollar(value));
         		}
         	}
-//            System.out.println("Currencies in use: ");
-//            for (Currency currency : currencies) {
-//                System.out.println(currency);
-//            }
+            System.out.println("Currencies in use: ");
+            for (Currency currency : currencies) {
+                System.out.println(currency);
+            }
             
         }
     }
