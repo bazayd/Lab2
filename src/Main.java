@@ -40,20 +40,26 @@ public class Main {
             
             if (op.equals("a")) {
 
-        		if (cur.equals("p")) {
+        		if (cur.equals("p") && type.equals("pound")) {
         			currencies[0].add(new Pound(value));
         			//System.out.println(currencies[0]);
 //        			System.out.println(currencies[0].getWhole());
 //        			System.out.println(currencies[0].getFraction());
 //        			System.out.println(currencies[0].toString());
-;        		}else {
+;        		}else if (cur.equals("d") && type.equals("dollar")){
         			currencies[1].add(new Dollar(value));
+        		}else {
+        			System.out.println("Invalid addition");
+        			//throw new IllegalArgumentException("Cannot compare currencies of different types.");
         		}
         	}else if (op.equals("s")) {
-        		if (cur.equals("p")) {
+        		if (cur.equals("p") && type.equals("pound")) {
         			currencies[0].subtract(new Pound(value));
-        		}else {
+        		}else if (cur.equals("d") && type.equals("dollar")){
         			currencies[1].subtract(new Dollar(value));
+        		}else {
+        			System.out.println("Invalid addition");
+        			//throw new IllegalArgumentException("Cannot compare currencies of different types.");
         		}
         	}
             System.out.println("Currencies in use: ");
