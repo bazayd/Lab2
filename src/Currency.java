@@ -85,9 +85,9 @@ public abstract class Currency {
 
      */
     public void add(Currency currency) {
-        if (!this.getClass().equals(currency.getClass())) {
-            throw new IllegalArgumentException("Cannot add currencies of different types.");
-        }
+//        if (!this.getClass().equals(currency.getClass())) {
+//            throw new IllegalArgumentException("Cannot add currencies of different types.");
+//        }
         int totalWhole = this.whole + currency.whole;
         int totalFraction = this.fraction + currency.fraction;
         //System.out.println("totFrac " + totalFraction + "curFrac " + currency.fraction);
@@ -105,10 +105,10 @@ public abstract class Currency {
 		the result of subtracting input object of same currency
      */
     public void subtract(Currency currency) {
-        if (!this.getClass().equals(currency.getClass())) {
-            throw new IllegalArgumentException("Cannot subtract currencies of different types.");
-        }
-        int totalWhole = this.whole * 100 + this.whole;
+//        if (!this.getClass().equals(currency.getClass())) {
+//            throw new IllegalArgumentException("Cannot subtract currencies of different types.");
+//        }
+        int totalWhole = this.whole * 100 + this.fraction;
         int subtractWholePart = currency.whole * 100 + currency.fraction;
         if (totalWhole < subtractWholePart) {
             throw new IllegalArgumentException("Cannot subtract a larger currency value from a smaller one.");
