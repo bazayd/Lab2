@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 /*
  * Authors: Nicholas Kang, Brandon Arriaga
  * Group 10 JAVA
@@ -9,6 +10,18 @@ import java.util.Scanner;
  * Purpose: Use classes, inheritance and polymorphism to prompt user for currencies and calculate currencies
  *
  */
+
+/*
+ * Authors: Nicholas Kang, Brandon Arriaga
+ * Group 10 JAVA
+ * 
+ * Lab 3 
+ * 
+ * Purpose: Use classes, inheritance and polymorphism to prompt user for currencies and calculate currencies
+ * 
+ */
+
+
 public class Main {
 
     public static void main(String[] args) {
