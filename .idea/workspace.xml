@@ -8,8 +8,13 @@
       <change afterPath="$PROJECT_DIR$/../blah/blah.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab1" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dollar.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dollar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dollar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dollar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pound.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pound.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pound.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="2SXHC8Y87xmUqcsB41VztwgNMhC" />
   <component name="ProjectViewState">
@@ -37,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Java/Lab2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }

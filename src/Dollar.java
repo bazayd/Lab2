@@ -1,3 +1,13 @@
+/*
+ * Authors: Nicholas Kang, Brandon Arriaga
+ * Group 10 JAVA
+ *
+ * Lab 2
+ *
+ * Purpose: Creates object of Dollar, that is used in Currency and currency array as a type of currency
+ * that can be added and subtracted.
+ *
+ */
 public class Dollar extends Currency{
 
     private String currencyName;
@@ -20,7 +30,18 @@ public class Dollar extends Currency{
         this.currencyName = dollar.currencyName;
     }
 
-    //returns the currency name
+    /*
+     * Method that gets the name of currency
+     *
+     * pre:
+     * No argument taken
+     *
+     * post:
+     *      return: String (name of currency)
+     *
+     *@Override object from extended class Currency
+     * return name of currency, "Dollar"
+     */
     @Override
     public String getCurencyName() {
         return currencyName;

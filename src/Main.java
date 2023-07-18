@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-
 /*
-Authors: Brandon Arriaga, Nicholas Kang
-Group 10 JAVA
-
-
+ * Authors: Nicholas Kang, Brandon Arriaga
+ * Group 10 JAVA
+ *
+ * Lab 2
+ *
+ * Purpose: Use classes, inheritance and polymorphism to prompt user for currencies and calculate currencies
+ *
  */
-
-
 public class Main {
 
     public static void main(String[] args) {
@@ -31,14 +31,7 @@ public class Main {
             System.out.println(currency);
         }
 
-        /*
-         * while (input not q)
-         * get 2nd letter
-         * then get the number
-         * and get the currency type
-         * if p or d add to dollar or pound
-         * check if type matches letter
-         */
+
 
         String op = ""; // operation (add a / subtract s)
         String cur; //currency type (pound p / dollar d)
@@ -76,7 +69,6 @@ public class Main {
                 }
 
 
-                //throw new IllegalArgumentException("Cannot compare currencies of different types.");
             } else if (op.equals("s")) {
 
                 try {
@@ -95,13 +87,13 @@ public class Main {
                 }
 
 
-                //throw new IllegalArgumentException("Cannot compare currencies of different types.");
 
             }
-            System.out.println("Currencies in use: ");
             for (Currency currency : currencies) {
-                System.out.println(currency);
+                System.out.println(currency.toString());
             }
+
+
 
             System.out.println("q to quit or any other key to continue: ");
             quit = scan.next();
