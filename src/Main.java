@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 /*
 Authors: Brandon Arriaga, Nicholas Kang
 Group 10 JAVA
@@ -7,16 +8,22 @@ Group 10 JAVA
 
  */
 
+
 public class Main {
 
     public static void main(String[] args) {
 
+
         Scanner scan = new Scanner(System.in);
+
+
 
         // Currency pound in first index and Dollar in second index.
         Currency[] currencies = new Currency[2];
         currencies[0] = new Pound();
         currencies[1] = new Dollar();
+
+        
 
         //display the currencies and their values
         System.out.println("Currencies in use: ");
@@ -51,6 +58,7 @@ public class Main {
 
 
             if (op.equals("a")) {
+
 
                 try {
                     if (cur.equals("p") && type.equals("pound")) {
@@ -89,8 +97,8 @@ public class Main {
 
                 //throw new IllegalArgumentException("Cannot compare currencies of different types.");
 
-
             }
+            System.out.println("Currencies in use: ");
             for (Currency currency : currencies) {
                 System.out.println(currency);
             }
