@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8357cf61-a557-4ffe-9972-c9ef81f8cdc6" name="Changes" comment="First Commit.">
-      <change afterPath="$PROJECT_DIR$/../blah/blah.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dollar.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dollar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dollar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dollar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pound.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pound.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2SXHC8Y87xmUqcsB41VztwgNMhC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,9 +42,24 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Java/Lab2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Lab3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Lab3" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
